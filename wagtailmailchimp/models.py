@@ -288,7 +288,7 @@ class AbstractMailchimpIntegrationForm(AbstractForm):
         rendered_dictionary_template = json.dumps({
             'email_address': self.get_mc_email_field_template(),
             'merge_fields': self.get_mc_merge_fields_template(),
-            'interests': interests,
+            # 'interests': interests,
             'status': 'subscribed',
         })
 
